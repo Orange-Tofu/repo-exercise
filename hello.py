@@ -1,4 +1,4 @@
 print("Hello world")
 
 print("Trigger worked")
-print("Hopefully works")
+print("Hopefully it works")
