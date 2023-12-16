@@ -16,5 +16,4 @@ def Generator(data, location):
     # location = "M:\\CS\\TitTat\\TechnoSeek-V2.0"
     image.save(location + "\\clue.png")
     print(f"Data:{data}, Image saved at location:{location}")
-
-# Generator("Hello World")
+    return

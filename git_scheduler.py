@@ -22,9 +22,11 @@ def git_commit(git_directory, commit_msg):
     subprocess.run(['git', '-C', git_directory, 'commit', '-m', f"{commit_msg}"])
     print("Changes commited succesfully")
 
+
 def git_all(git_directory, file_path, commit_msg):
     git_add(git_directory, file_path)
     git_commit(git_directory, commit_msg)
     git_push(git_directory)
     print("All git process done")
+    return
 
