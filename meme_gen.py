@@ -8,6 +8,4 @@ content = [
 ]
 
 def get_data():
-    print(random.choice(content))
-
-get_data()
+    return random.choice(content)
