@@ -2,7 +2,7 @@ from rmqrcode import rMQR, QRImage
 import rmqrcode
 
 
-def Generator(data):
+def Generator(data, location):
     qr = rMQR.fit(
         data,
         ecc=rmqrcode.ErrorCorrectionLevel.M,
@@ -13,7 +13,7 @@ def Generator(data):
     # image.show()
 
     #Change image location appropraitely
-    location = "M:\\CS\\TitTat\\TechnoSeek-V2.0"
+    # location = "M:\\CS\\TitTat\\TechnoSeek-V2.0"
     image.save(location + "\\clue.png")
     print(f"Data:{data}, Image saved at location:{location}")
 
